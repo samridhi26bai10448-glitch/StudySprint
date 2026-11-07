@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySprint | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">StudySprint<span>.</span></a>
+
+        <nav class="nav-links">
+            <a href="index.html">Dashboard</a>
+            <a href="tasks.html">My Tasks</a>
+            <a href="calendar.html">My Calendar</a>
+            <a href="progress.html">My Progress</a>
+        </nav>
+
+        <button type="button" id="logoutButton" class="nav-button">
+            Log Out
+        </button>
+    </header>
+
+    <main class="container">
+
+        <!-- Welcome -->
+        <section class="welcome">
+            <p class="eyebrow">YOUR PERSONAL STUDY SPACE</p>
+
+            <h1>
+                Small steps.<br>
+                <span>Big achievements.</span>
+            </h1>
+
+            <p class="welcome-text">
+                Organize your study sessions, track your progress,
+                and make every day count.
+            </p>
+
+            <a href="tasks.html" class="primary-button">
+                Plan my day →
+            </a>
+
+            <span class="welcome-decoration" aria-hidden="true">☕</span>
+        </section>
+
+        <!-- Quick Statistics -->
+        <section class="stats">
+
+            <article class="stat-card">
+                <p>Total Tasks</p>
+                <h2 id="totalTasks">0</h2>
+                <span>Tasks in your planner</span>
+            </article>
+
+            <article class="stat-card">
+                <p>Completed</p>
+                <h2 id="completedTasks">0</h2>
+                <span>Tasks you've finished</span>
+            </article>
+
+            <article class="stat-card">
+                <p>Remaining</p>
+                <h2 id="remainingTasks">0</h2>
+                <span>Tasks still to do</span>
+            </article>
+
+        </section>
+
+        <!-- Overall Progress -->
+        <section class="calendar-section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">YOUR JOURNEY SO FAR</p>
+                    <h2>Overall Progress ✿</h2>
+                </div>
+            </div>
+
+            <div class="weekly-progress">
+
+                <div class="weekly-progress-heading">
+                    <h3>Task Completion</h3>
+                    <span id="dashboardProgressPercentage">0%</span>
+                </div>
+
+                <div class="progress-bar-background">
+                    <div
+                        id="dashboardProgressBar"
+                        class="progress-bar-fill"
+                        role="progressbar"
+                        aria-label="Overall task completion"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="0">
+                    </div>
+                </div>
+
+                <p id="dashboardProgressMessage">
+                    Your study journey starts here. 🌱
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Weekly Preview -->
+        <section class="calendar-section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">PLAN AHEAD</p>
+                    <h2>This Week 🌿</h2>
+                </div>
+
+                <a href="calendar.html" class="primary-button">
+                    View Calendar →
+                </a>
+            </div>
+
+            <div class="weekly-progress">
+
+                <div class="weekly-progress-heading">
+                    <h3>Weekly Achievement</h3>
+                    <span id="dashboardWeeklyPercentage">0%</span>
+                </div>
+
+                <div class="progress-bar-background">
+                    <div
+                        id="dashboardWeeklyBar"
+                        class="progress-bar-fill"
+                        role="progressbar"
+                        aria-label="Weekly task completion"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="0">
+                    </div>
+                </div>
+
+                <div class="weekly-progress-stats">
+                    <p>Completed: <strong id="dashboardWeeklyCompleted">0</strong></p>
+                    <p>Remaining: <strong id="dashboardWeeklyRemaining">0</strong></p>
+                    <p>Total: <strong id="dashboardWeeklyTotal">0</strong></p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Quick Links -->
+        <section class="calendar-section">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">YOUR STUDY SPACE</p>
+                    <h2>Where would you like to go? ✿</h2>
+                </div>
+            </div>
+
+            <div class="quick-links">
+
+                <a href="tasks.html" class="stat-card">
+                    <h3>My Tasks ✏️</h3>
+                    <p>Organize and manage your study tasks.</p>
+                </a>
+
+                <a href="calendar.html" class="stat-card">
+                    <h3>My Calendar 📅</h3>
+                    <p>See your weekly study schedule.</p>
+                </a>
+
+                <a href="progress.html" class="stat-card">
+                    <h3>My Progress 🌱</h3>
+                    <p>See how far you've come.</p>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made for curious minds and big dreams. ♡</p>
+        <p class="footer-subtitle">
+            Study smart. Take little breaks. Enjoy your matcha. 🍵
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks | StudySprint</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">StudySprint ✿</div>
+        <div class="nav-links">
+            <a href="index.html">Dashboard</a>
+            <a href="tasks.html">My Tasks</a>
+            <a href="calendar.html">My Calendar</a>
+            <a href="progress.html">My Progress</a>
+            <button id="logoutButton" class="nav-button">Log Out</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="task-section">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">STAY ORGANIZED</p>
+                    <h2>My Tasks ✿</h2>
+                    <p>One task at a time, one step closer to your goals.</p>
+                </div>
+            </div>
+
+            <form id="taskForm">
+                <label for="taskTitle">Task title</label>
+                <input type="text" id="taskTitle" name="title"
+                       placeholder="What do you need to study?" required>
+
+                <label for="taskDescription">Description</label>
+                <textarea id="taskDescription" name="description"
+                          placeholder="Add some details..."></textarea>
+
+                <label for="taskPriority">Priority</label>
+                <select id="taskPriority" name="priority">
+                    <option value="Low">Low</option>
+                    <option value="Medium" selected>Medium</option>
+                    <option value="High">High</option>
+                </select>
+
+                <label for="taskDueDate">Due date (optional)</label>
+                <input type="date" id="taskDueDate" name="due_date">
+
+                <button type="submit">+ Add Task</button>
+            </form>
+
+            <div id="taskList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made for curious minds and clear skies. ✦</p>
+    </footer>
+
+</body>
+</html>

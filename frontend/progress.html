@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Progress | StudySprint</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">StudySprint ✿</h2>
+
+        <div class="nav-links">
+            <a href="index.html">Dashboard</a>
+            <a href="tasks.html">My Tasks</a>
+            <a href="calendar.html">My Calendar</a>
+            <a href="progress.html">My Progress</a>
+            <button id="logoutButton" class="nav-button">Logout</button>
+        </div>
+    </nav>
+
+    <main class="dashboard-container">
+        <section class="welcome">
+            <h1>Your Progress 🌱</h1>
+            <p>Every small step counts. Look how far you've come!</p>
+        </section>
+
+        <section class="stats-section">
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <p id="progressTotalTasks">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Completed Tasks</h3>
+                <p id="progressCompletedTasks">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Remaining Tasks</h3>
+                <p id="progressRemainingTasks">0</p>
+            </div>
+        </section>
+
+        <section class="calendar-section">
+            <h2>Your Productivity ✿</h2>
+            <p>Keep showing up, one task at a time.</p>
+
+            <div class="weekly-progress">
+                <h3>Overall Completion</h3>
+                <div class="progress-bar">
+                    <div id="overallProgressBar" class="progress-fill"></div>
+                </div>
+                <p id="overallProgressText">0% completed</p>
+            </div>
+
+            <div id="productivityMessage" class="auth-note">
+                Your progress will appear here once you add tasks.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made for curious minds and productive days. ✿</p>
+        <p class="footer-subtitle">One task at a time. 🍵</p>
+    </footer>
+
+</body>
+</html>

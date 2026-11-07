@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Calendar | StudySprint</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">StudySprint ✿</div>
+        <div class="nav-links">
+            <a href="index.html">Dashboard</a>
+            <a href="tasks.html">My Tasks</a>
+            <a href="calendar.html">My Calendar</a>
+            <a href="progress.html">My Progress</a>
+            <button id="logoutButton" class="nav-button">Log Out</button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="task-section">
+            <div class="section-heading">
+                <p class="eyebrow">PLAN YOUR WEEK</p>
+                <h2>My Calendar ✿</h2>
+                <p>See your study schedule, one day at a time.</p>
+            </div>
+
+            <section class="calendar-section">
+                <div class="calendar-navigation">
+                    <button id="previousWeekButton" type="button">← Previous</button>
+                    <h3 id="calendarWeekTitle">This Week</h3>
+                    <button id="nextWeekButton" type="button">Next →</button>
+                </div>
+
+                <div class="calendar-grid" id="calendarGrid">
+                    <!-- Calendar days will appear here -->
+                </div>
+
+                <div class="calendar-unscheduled">
+                    <h3>Unscheduled Tasks 🌱</h3>
+                    <div id="unscheduledTasks">
+                        Loading tasks...
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made for curious minds and clear skies. ✦</p>
+    </footer>
+
+</body>
+</html>

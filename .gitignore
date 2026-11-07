@@ -1,0 +1,22 @@
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+venv/
+
+# Private database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Secret keys and environment variables
+.env
+.env.*
+!.env.example
+
+# Development files
+.vscode/
+.pytest_cache/
